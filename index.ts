@@ -1,3 +1,4 @@
+
 import express from "express";
 import type { NextFunction, Request, Response } from "express";
 import client from "prom-client";
@@ -62,9 +63,11 @@ app.get("/cpu", (req, res) => {
 
 })
 
-app.get("/users", (req, res) => {
+app.get("/user", (req, res) => {
     res.status(200).json({
-        user: "usersssss"
+        name: "usersssss",
+        password:"21324"
+
     })
 })
 
